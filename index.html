@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="menu.png" alt="menu">
+            <img src="logo.png" alt="logo">
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">contemporary</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+            <button type="button"onclick="toggleBtn()" id="btn"><span></span></button>  
+        </nav>
+        
+       
+
+    <div class="lamp-cotainer">
+    <img src="lamp.png" class="lamp">
+    <img src="light.png" class="light" id="light">
+    </div>
+<div class="text-container">
+    <h1>Latest in lighting</h1>
+    <p>
+        Discover a new point of view on technical lighting with Lamp.<br>design, we produce and make your technical lighting projects possible.
+    </p>
+    <a href="https://www.ikea.com/us/en/cat/lamps-light-fixtures-li002/">Check All Collection</a>
+    <div class="control">
+        <div class="container">
+            <!-- <h1>Google Search</h1> -->
+            <div class="search-container2">
+                <input type="text" id="search-input2" placeholder="Enter your search query">
+                <button id="search-button2">Search</button>
+            </div>
+            <div id="results-container"></div>
+        </div>
+    
+        <script src="script.js"></script>
+        <p>04</p>
+        <div class="line"><span></span></div>
+        <p>05</p>
+    </div>
+   
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active")
+        light.classList.toggle("on")
+
+    }
+    
+</script>
+</div>
+</body>
+</html>
